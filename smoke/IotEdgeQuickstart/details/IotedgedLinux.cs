@@ -145,7 +145,7 @@ namespace IotEdgeQuickstart.Details
             else
             {
                 commandName = "yes";
-                commandArgs = $"| dpkg -i {this.archivePath}";
+                commandArgs = $"yes | dpkg -i {this.archivePath}";
             }
 
             return Process.RunAsync(
